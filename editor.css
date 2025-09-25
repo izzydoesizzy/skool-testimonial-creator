@@ -1,0 +1,54 @@
+/* editor.css
+ * Provides styling for the editor page. It ensures the controls and
+ * canvas are laid out cleanly and are responsive within the browser.
+ */
+body {
+  font-family: Arial, sans-serif;
+  padding: 16px;
+  background-color: #fafafa;
+  color: #333;
+}
+
+h2 {
+  margin-top: 0;
+}
+
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.controls label {
+  display: flex;
+  align-items: center;
+  margin-right: 4px;
+}
+
+.controls input[type="color"],
+.controls input[type="text"],
+.controls input[type="file"] {
+  margin-right: 12px;
+}
+
+button {
+  padding: 6px 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #0069d9;
+}
+
+#previewCanvas {
+  border: 1px solid #ccc;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-top: 10px;
+}
