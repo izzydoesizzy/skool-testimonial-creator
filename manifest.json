@@ -1,0 +1,40 @@
+{
+  "manifest_version": 3,
+  "name": "Skool Testimonial Creator",
+  "version": "1.0.0",
+  "description": "Collect and export testimonials and member highlights from Skool pages.",
+  "permissions": [
+    "storage",
+    "activeTab",
+    "scripting"
+  ],
+  "host_permissions": [
+    "https://*.skool.com/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Skool Testimonial Creator"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://*.skool.com/*"],
+      "js": ["content.js"],
+      "css": ["content.css"],
+      "run_at": "document_idle"
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["editor.html", "editor.js", "editor.css"],
+      "matches": ["*://*/*"]
+    }
+  ],
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  }
+}
