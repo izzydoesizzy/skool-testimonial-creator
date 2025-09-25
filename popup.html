@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<!--
+  popup.html
+  The extension popup provides a simple interface to enable or disable
+  different collection modes and to navigate to the editor. Each button
+  sends a message to the content script running in the active tab.
+-->
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Skool Testimonial Creator</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <h2>Skool Testimonial Creator</h2>
+    <button id="testimonialButton">Enable Testimonial Mode</button>
+    <button id="memberButton">Enable Member Mode</button>
+    <button id="disableButton">Disable</button>
+    <hr />
+    <button id="editorButton">Open Editor</button>
+    <button id="clearButton">Clear Selected</button>
+    <script src="popup.js"></script>
+  </body>
+</html>
