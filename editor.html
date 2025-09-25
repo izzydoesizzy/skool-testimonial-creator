@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<!--
+  editor.html
+  Provides a simple editor for arranging and exporting the collected
+  testimonials or member descriptions. Users can select a background
+  colour, add a custom footer text, upload a logo, and render the
+  preview. The final graphic can be downloaded as a PNG.
+-->
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Testimonial Editor</title>
+    <link rel="stylesheet" href="editor.css" />
+  </head>
+  <body>
+    <h2>Testimonial Editor</h2>
+    <div class="controls">
+      <label for="bgColor">Background:</label>
+      <input type="color" id="bgColor" value="#f7f7f7" />
+      <label for="customText">Footer text:</label>
+      <input type="text" id="customText" placeholder="Your slogan or URL" />
+      <label for="logoInput">Logo:</label>
+      <input type="file" id="logoInput" accept="image/*" />
+      <button id="renderBtn">Render preview</button>
+      <button id="downloadBtn">Download PNG</button>
+    </div>
+    <canvas id="previewCanvas" width="1400" height="790"></canvas>
+    <script src="editor.js"></script>
+  </body>
+</html>
