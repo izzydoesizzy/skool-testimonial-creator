@@ -1,0 +1,12 @@
+/* content.css
+ * Styles injected into Skool pages to highlight selectable elements when
+ * the extension is active. The dashed outline makes it clear which
+ * elements can be clicked, while the hover state adds a subtle tint.
+ */
+.stc-highlight {
+  outline: 2px dashed #007bff;
+  cursor: pointer;
+}
+.stc-hover {
+  background-color: rgba(0, 123, 255, 0.05);
+}
